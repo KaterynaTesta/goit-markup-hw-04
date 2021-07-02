@@ -106,6 +106,9 @@ img {
   color: var(--title-color);
   text-align: left;
 }
+.contact-list {
+  display: flex;
+}
 .contact-header {
   margin-right: 50px;
   margin-left: auto;
@@ -115,6 +118,7 @@ img {
 .contact-link:focus {
   color: var(--accent-color);
 }
+
 .icon-envelope {
   width: 16px;
   height: 12px;
@@ -128,10 +132,10 @@ img {
   margin-right: 10px;
   fill: var(--text-color);
 }
-/* .contact {
+.contact-link {
   display: flex;
   align-items: center;
-} */
+}
 .contact-link {
   color: var(--text-color);
 }
@@ -147,6 +151,17 @@ img {
   padding-bottom: 200px;
   text-align: center;
   background-color: #2f303a;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .title {
   max-width: 696px;
@@ -187,6 +202,20 @@ img {
 }
 /* Our advantages */
 
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
