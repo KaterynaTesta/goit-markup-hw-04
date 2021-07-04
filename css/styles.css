@@ -340,6 +340,7 @@ img {
 }
 
 /* OUR CLIENTS */
+
 .clients-list {
   display: flex;
   justify-content: space-between;
@@ -350,19 +351,22 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-  left: 215px;
-  top: 2493px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.client-item:hover,
-.client-item:focus {
-  fill: var(--accent-color);
+.client-link {
+  display: block;
 }
 .client-desc:hover,
 .client-desc:focus {
   border-color: var(--accent-color);
 }
+
+.client-desc:hover .client-item,
+.client-desc:focus .client-item {
+  fill: var(--accent-color);
+}
+
 .client-item {
   fill: #afb1b8;
 }
